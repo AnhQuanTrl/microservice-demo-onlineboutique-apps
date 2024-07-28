@@ -23,7 +23,7 @@ spec:
         runAsUser: 1000
       containers:
         - name: server
-          image: ghcr.io/AnhQuanTrl/productcatalog
+          image: ghcr.io/anhquantrl/productcatalog
           securityContext:
             allowPrivilegeEscalation: false
             capabilities:
