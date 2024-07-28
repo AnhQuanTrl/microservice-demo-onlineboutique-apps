@@ -13,7 +13,6 @@ spec:
       labels:
         app: productcatalogservice
     spec:
-      serviceAccountName: productcatalogservice
       imagePullSecrets:
         - name: ghcr-registry
       terminationGracePeriodSeconds: 5
