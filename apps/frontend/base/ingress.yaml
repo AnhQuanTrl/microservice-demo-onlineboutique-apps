@@ -3,14 +3,14 @@ kind: Ingress
 metadata:
   name: ingress-fe
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    # nginx.ingress.kubernetes.io/rewrite-target: /$2
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
     - http:
         paths:
           - pathType: Prefix
-            path: /online-boutique(/|$)(.*)
+            path: /online-boutique(/|$)
             backend:
               service:
                 name: frontend
