@@ -3,6 +3,8 @@ kind: Kustomization
 namespace: online-boutique
 resources:
   - ../../base
+patches:
+  - path: deploy.yaml
 images:
   - name: ghcr.io/anhquantrl/frontend
     newName: ghcr.io/anhquantrl/frontend
