@@ -35,7 +35,7 @@ spec:
           readinessProbe:
             initialDelaySeconds: 10
             httpGet:
-              path: "/_healthz"
+              path: "/online-boutique/_healthz"
               port: 8080
               httpHeaders:
                 - name: "Cookie"
@@ -43,12 +43,14 @@ spec:
           livenessProbe:
             initialDelaySeconds: 10
             httpGet:
-              path: "/_healthz"
+              path: "/online-boutique/_healthz"
               port: 8080
               httpHeaders:
                 - name: "Cookie"
                   value: "shop_session-id=x-liveness-probe"
           env:
+            - name: BASE_URL
+              value: /online-boutique
             - name: PORT
               value: "8080"
             - name: PRODUCT_CATALOG_SERVICE_ADDR
