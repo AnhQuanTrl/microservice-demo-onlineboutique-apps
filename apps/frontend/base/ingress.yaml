@@ -10,7 +10,7 @@ spec:
     - http:
         paths:
           - pathType: Prefix
-            path: /online-boutique(/|$)
+            path: /online-boutique
             backend:
               service:
                 name: frontend
