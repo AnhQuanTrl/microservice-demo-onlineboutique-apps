@@ -4,7 +4,7 @@ namespace: online-boutique
 resources:
 - ../../base
 images:
-- digest: sha256:2e77ea1a7f5799650cf8a498bf2a38c86dbcd991df487144ff9b9944b1108ca5
+- digest: sha256:cbc3ba8c36fb20564486e50e3e117c164cb708a939fc722a56c17666c96f6eb4
   name: ghcr.io/anhquantrl/productcatalog
   newName: ghcr.io/anhquantrl/productcatalog
   newTag: main
