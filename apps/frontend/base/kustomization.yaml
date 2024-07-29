@@ -4,3 +4,4 @@ namespace: online-boutique
 resources:
   - deploy.yaml
   - svc.yaml
+  - ingress.yaml
