@@ -13,6 +13,8 @@ spec:
       labels:
         app: cartservice
     spec:
+      imagePullSecrets:
+        - name: ghcr-registry
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000

@@ -3,3 +3,7 @@ kind: Kustomization
 namespace: online-boutique
 resources:
   - ../../base
+images:
+  - name: ghcr.io/anhquantrl/cart
+    newName: ghcr.io/anhquantrl/cart
+    newTag: main
