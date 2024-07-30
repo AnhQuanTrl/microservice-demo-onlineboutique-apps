@@ -2,8 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: online-boutique
 resources:
-  - ../../base
+- ../../base
 images:
-  - name: ghcr.io/anhquantrl/productcatalog
-    newName: ghcr.io/anhquantrl/productcatalog
-    newTag: main
+- digest: sha256:cbc3ba8c36fb20564486e50e3e117c164cb708a939fc722a56c17666c96f6eb4
+  name: ghcr.io/anhquantrl/productcatalog
+  newName: ghcr.io/anhquantrl/productcatalog
+  newTag: main
