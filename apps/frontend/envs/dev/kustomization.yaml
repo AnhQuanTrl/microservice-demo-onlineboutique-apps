@@ -4,7 +4,7 @@ namespace: online-boutique
 resources:
 - ../../base
 images:
-- digest: sha256:c1a5eea509186aba56a2abf71f56f05591c2eb4eec546436d4afbc3079f730da
+- digest: sha256:0c6e30fa42c7653e53b0ecd07c27e16d0628a1bd457b82db0adfea076cbcd279
   name: ghcr.io/anhquantrl/frontend
   newName: ghcr.io/anhquantrl/frontend
   newTag: main
